@@ -16,3 +16,6 @@ to persist in this repo long term.
 
 Semantic UI and Material UI are both nice, stable alternatives that are a million 
 miles ahead of this project.
+
+---
+###### Copyright © 2018 Chris Kilpatrick. Released under [MIT License](https://opensource.org/licenses/MIT).
