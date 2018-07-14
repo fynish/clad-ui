@@ -1,0 +1,100 @@
+/*
+   ___  _           _       _
+  / __|| | __ _  __| |/\ /\(_)
+ / /   | |/ _` |/ _` / / \ \ |
+/ /___ | | (_| | (_| \ \_/ / |
+\____/ |_|\__,_|\__,_|\___/|_|
+  • • C S S • S T Y L E S • •
+
+Where reasonable, class names should be prefixed with 'clad' to minimize possible name collisions.
+The class name should be the same as the exported component name.
+(i.e. .clad.table for the Table component)
+
+When new CladUi components are created, they should be name according to the above style guide, and
+have a placeholder class added below. Classes should be added both to the component & to this file
+even if there is no plan to add styles to that class.
+*/
+
+
+a {
+    color: inherit;
+}
+
+/*
+   _____      _
+  / ____|    | |
+ | |     ___ | | ___  _ __ ___
+ | |    / _ \| |/ _ \| '__/ __|
+ | |___| (_) | | (_) | |  \__ \
+  \_____\___/|_|\___/|_|  |___/
+T E X T  &  B A C K G R O U N D S
+*/
+
+.clad.color-alert {
+    color: #69E856;               /* neonGreen */
+}
+
+.clad.color-default {
+    color: rgba(255, 255, 255, 0.8);    /* greyLight */
+}
+
+.clad.color-primary {
+    color: #197bce;               /* blueLake */
+}
+
+.clad.color-secondary {
+    color: #5E52CF;               /* aquaMarine */
+}
+
+.clad.color-tertiary {
+    color: #F9FFCA                /* dingyCream */
+}
+
+.clad.bg-alert {
+    background-color: #69E856;    /* neonGreen */
+    color: rgba(0, 0, 0, 1);                       /* justBlack */
+}
+
+.clad.bg-default {
+    background-color: rgba(255, 255, 255, 0.8);    /* greyLight */
+    color: rgba(0, 0, 0, 1);                       /* justBlack */
+}
+
+.clad.bg-primary {
+    background-color: #197bce;    /* blueLake */
+    color: rgba(255, 255, 255, 1);                /* justWhite */
+}
+
+.clad.bg-secondary {
+    background-color: #5E52CF;    /* aquaMarine */
+    color: rgba(255, 255, 255, 1);                /* justWhite */
+}
+
+.clad.bg-tertiary {
+    background-color: #F9FFCA;    /* dingyCream */
+    color: #222222;               /* greyDark */
+}
+
+
+/*
+   _____                                             _
+  / ____|                                           | |
+ | |     ___  _ __ ___  _ __   ___  _ __   ___ _ __ | |__ ___
+ | |    / _ \| '_ ` _ \| '_ \ / _ \| '_ \ / _ \ '_ \| __|/ __|
+ | |___| (_) | | | | | | |_) | (_) | | | |  __/ | | | |_ \__ \
+  \_____\___/|_| |_| |_| .__/ \___/|_| |_|\___|_| |_|\__||___/
+                       | |  ________________________________
+                       |_|  Note: Some styles may be dynamicly
+                            overwritten via the javascript theme.
+                            ---------------------------------
+*/
+
+.clad.button {}
+.clad.card {}
+.clad.input {}
+.clad.navbar {}
+.clad.option {}
+.clad.select {}
+.clad.table {}
+.clad.td {}
+.clad.tr {}
