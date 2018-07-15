@@ -22,8 +22,6 @@ const ThemeExample = () => (
     <h1>CladUi</h1>
       Theme Examples & Options
 
-    <hr />
-
     <h2>Possible Imports</h2>
 
     <ul>
@@ -40,21 +38,52 @@ const ThemeExample = () => (
       </ul>
     </ul>
 
-    <hr />
-
     <h2>Color Options</h2>
 
-    <div className="clad color-alert">color-alert</div>
-    <div className="clad color-default">color-default</div>
-    <div className="clad color-primary">color-primary</div>
-    <div className="clad color-secondary">color-secondary</div>
-    <div className="clad color-tertiary">color-tertiary</div>
+    <div className="clad alert">alert</div>
+    <div className="clad default">default</div>
+    <div className="clad primary">primary</div>
+    <div className="clad secondary">secondary</div>
+    <div className="clad tertiary">tertiary</div>
 
     <div className="clad bg-alert">bg-alert</div>
     <div className="clad bg-default">bg-default</div>
     <div className="clad bg-primary">bg-primary</div>
     <div className="clad bg-secondary">bg-secondary</div>
     <div className="clad bg-tertiary">bg-tertiary</div>
+
+    <h2>Examples</h2>
+
+    <hr />
+    <h3>Buttons</h3>
+
+    <p>
+      <Button>Default</Button>
+      <code>{'<Button>Default</Button>'}</code>
+    </p>
+
+    <p>
+      <Button rank="primary">Primary</Button>
+      <code>{'<Button rank="primary">Primary</Button>'}</code>
+    </p>
+
+    <p>
+      <Button rank="secondary">Secondary</Button>
+      <code>{'<Button rank="secondary">Secondary</Button>'}</code>
+    </p>
+
+    <p>
+      <Button rank="tertiary">Tertiary</Button>
+      <code>{'<Button rank="tertiary">Tertiary</Button>'}</code>
+    </p>
+
+    <p>
+      <Button rank="alert">Alert</Button>
+      <code>{'<Button rank="alert">Alert</Button>'}</code>
+    </p>
+
+    <hr />
+
   </div>
 );
 

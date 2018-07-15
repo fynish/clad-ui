@@ -15,6 +15,13 @@ have a placeholder class added below. Classes should be added both to the compon
 even if there is no plan to add styles to that class.
 */
 
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #222;
+  color: rgba(255, 255, 255, 0.8);
+}
 
 a {
     color: inherit;
@@ -30,23 +37,23 @@ a {
 T E X T  &  B A C K G R O U N D S
 */
 
-.clad.color-alert {
+.clad.alert {
     color: #69E856;               /* neonGreen */
 }
 
-.clad.color-default {
+.clad.default {
     color: rgba(255, 255, 255, 0.8);    /* greyLight */
 }
 
-.clad.color-primary {
+.clad.primary {
     color: #197bce;               /* blueLake */
 }
 
-.clad.color-secondary {
+.clad.secondary {
     color: #5E52CF;               /* aquaMarine */
 }
 
-.clad.color-tertiary {
+.clad.tertiary {
     color: #F9FFCA                /* dingyCream */
 }
 
@@ -89,7 +96,12 @@ T E X T  &  B A C K G R O U N D S
                             ---------------------------------
 */
 
-.clad.button {}
+.clad.button {
+  margin: 1%;
+  border: 1px solid black;
+  font-size: 0.8em;
+}
+
 .clad.card {}
 .clad.input {}
 .clad.navbar {}
