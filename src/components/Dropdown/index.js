@@ -8,19 +8,28 @@ import PropTypes from 'prop-types';
 */
 
 export const CuSelect = props => (
-  <select className="clad select" onChange={props.onChange}>
+  <select
+    className="clad select"
+    defaultValue={props.defaultValue}
+    onChange={props.onChange}
+    value={props.value}
+  >
     {props.children}
   </select>
 );
 
 CuSelect.defaultProps = {
   children: null,
+  defaultValue: undefined,
   onChange: undefined,
+  value: undefined,
 };
 
 CuSelect.propTypes = {
   children: PropTypes.node, // TODO: Is this the ideal PropType?
+  defaultValue: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   onChange: PropTypes.func,
+  value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 };
 
 /*
