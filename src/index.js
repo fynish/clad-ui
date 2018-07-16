@@ -4,7 +4,7 @@ import CuButton from './components/Button/';
 import CuCard from './components/Card/';
 import CuInput from './components/Input/';
 import CuNavBar from './components/NavBar/';
-import { CuTable, CuTd, CuTr } from './components/Table/';
+import { CuTable, CuTbody, CuTd, CuTfoot, CuThead, CuTr } from './components/Table/';
 import { CuSelect, CuOption } from './components/Dropdown/';
 
 export const Button = CuButton;
@@ -14,7 +14,10 @@ export const NavBar = CuNavBar;
 export const Option = CuOption;
 export const Select = CuSelect;
 export const Table = CuTable;
+export const Tbody = CuTbody;
 export const Td = CuTd;
+export const Tfoot = CuTfoot;
+export const Thead = CuThead;
 export const Tr = CuTr;
 
 const ThemeExample = () => (
@@ -33,8 +36,11 @@ const ThemeExample = () => (
       <li>Select</li>
       <li>Table</li>
       <ul>
-        <li>Td</li>
+        <li>Thead</li>
+        <li>Tbody</li>
+        <li>Tfoot</li>
         <li>Tr</li>
+        <li>Td</li>
       </ul>
     </ul>
 
@@ -83,6 +89,43 @@ const ThemeExample = () => (
     </p>
 
     <hr />
+    <h3>Table</h3>
+    <Table>
+      <Thead>
+        <Tr>
+          <Td>Table</Td>
+          <Td>Import</Td>
+          <Td>(Table)</Td>
+        </Tr>
+      </Thead>
+      <Tbody>
+        <Tr>
+          <Td>Table</Td>
+          <Td>Header</Td>
+          <Td>(Thead)</Td>
+        </Tr>
+        <Tr>
+          <Td>Table</Td>
+          <Td>Body</Td>
+          <Td>(Tbody)</Td>
+        </Tr>
+        <Tr>
+          <Td>Table</Td>
+          <Td>Footer</Td>
+          <Td>(Tfoot)</Td>
+        </Tr>
+        <Tr>
+          <Td>Table</Td>
+          <Td>Row</Td>
+          <Td>(Tr)</Td>
+        </Tr>
+        <Tr>
+          <Td>Table</Td>
+          <Td>Data</Td>
+          <Td>(Td)</Td>
+        </Tr>
+      </Tbody>
+    </Table>
 
   </div>
 );

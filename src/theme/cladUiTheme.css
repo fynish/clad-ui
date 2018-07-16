@@ -38,27 +38,27 @@ T E X T  &  B A C K G R O U N D S
 */
 
 .clad.alert {
-    color: #69E856;               /* neonGreen */
+    color: rgba(105, 232, 86, 1);                 /* neonGreen */
 }
 
 .clad.default {
-    color: rgba(255, 255, 255, 0.8);    /* greyLight */
+    color: rgba(255, 255, 255, 0.8);              /* greyLight */
 }
 
 .clad.primary {
-    color: #197bce;               /* blueLake */
+    color: rgba(25, 123, 206, 1);                 /* blueLake */
 }
 
 .clad.secondary {
-    color: #5E52CF;               /* aquaMarine */
+    color: rgba(94, 82, 207, 1);                  /* aquaMarine */
 }
 
 .clad.tertiary {
-    color: #F9FFCA                /* dingyCream */
+    color: rgb(249, 255, 202, 1)                  /* dingyCream */
 }
 
 .clad.bg-alert {
-    background-color: #69E856;    /* neonGreen */
+    background-color: rgba(105, 232, 86, 1);       /* neonGreen */
     color: rgba(0, 0, 0, 1);                       /* justBlack */
 }
 
@@ -68,18 +68,18 @@ T E X T  &  B A C K G R O U N D S
 }
 
 .clad.bg-primary {
-    background-color: #197bce;    /* blueLake */
+    background-color: rgba(25, 123, 206, 1);      /* blueLake */
     color: rgba(255, 255, 255, 1);                /* justWhite */
 }
 
 .clad.bg-secondary {
-    background-color: #5E52CF;    /* aquaMarine */
+    background-color: rgba(94, 82, 207, 1);       /* aquaMarine */
     color: rgba(255, 255, 255, 1);                /* justWhite */
 }
 
 .clad.bg-tertiary {
-    background-color: #F9FFCA;    /* dingyCream */
-    color: #222222;               /* greyDark */
+    background-color: rgb(249, 255, 202, 1);      /* dingyCream */
+    color: rgba(34, 34, 34, 1);                   /* greyDark */
 }
 
 
@@ -96,17 +96,91 @@ T E X T  &  B A C K G R O U N D S
                             ---------------------------------
 */
 
+
+/*
+  ___      _   _ 
+ | _ )_  _| |_| |_ ___ _ _ 
+ | _ \ || |  _|  _/ _ \ ' \ 
+ |___/\_,_|\__|\__\___/_||_|
+
+*/
+
 .clad.button {
   margin: 1%;
   border: 1px solid black;
   font-size: 0.8em;
 }
 
-.clad.card {}
-.clad.input {}
-.clad.navbar {}
-.clad.option {}
-.clad.select {}
-.clad.table {}
+
+/*
+  _____     _    _     
+ |_   _|_ _| |__| |___ 
+   | |/ _` | '_ \ / -_)
+   |_|\__,_|_.__/_\___|
+*/
+
+.clad.table {
+  color: black;
+}
+.clad.tbody {}
 .clad.td {}
+.clad.tfoot {}
+.clad.thead {}
 .clad.tr {}
+
+.clad.tbody tr:nth-child(odd) {
+  background-color: rgba(255, 255, 255, 0.4);  /* defatult + alpha */
+}
+
+.clad.tbody tr:nth-child(even) {
+  background-color: rgba(25, 123, 206, 0.2);  /* primary + alpha */
+}
+
+.clad.tbody tr {
+  background-color: black;
+}
+
+.clad.table {
+  background-color: rgba(255, 255, 255, 0.4);  /* defatult + alpha */
+}
+
+/*
+   ___             _ 
+  / __|__ _ _ _ __| |
+ | (__/ _` | '_/ _` |
+  \___\__,_|_| \__,_|
+ */
+
+.clad.card {}
+
+
+/*
+  ___                _   
+ |_ _|_ _  _ __ _  _| |_ 
+  | || ' \| '_ \ || |  _|
+ |___|_||_| .__/\_,_|\__|
+          |_|  
+*/
+.clad.input {}
+
+
+/*
+  _  _          ___           
+ | \| |__ ___ _| _ ) __ _ _ _ 
+ | .` / _` \ V / _ \/ _` | '_|
+ |_|\_\__,_|\_/|___/\__,_|_|  
+                              
+*/
+.clad.navbar {}
+
+
+/*
+  ___                   _                 
+ |   \ _ _ ___ _ __  __| |_____ __ ___ _  
+ | |) | '_/ _ \ '_ \/ _` / _ \ V  V / ' \ 
+ |___/|_| \___/ .__/\__,_\___/\_/\_/|_||_|
+              |_| 
+*/
+.clad.option {}
+
+.clad.select {}
