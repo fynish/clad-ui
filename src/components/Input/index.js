@@ -4,13 +4,18 @@ import PropTypes from 'prop-types';
 
 const Input = props => (
   <input
-    defaultValue={props.defaultValue}
+    {...props}
     className="clad input"
+  />
+);
+
+/*
+ Removed in favor of {...props}
+    defaultValue={props.defaultValue}
     onChange={props.onChange}
     type={props.type}
     value={props.value}
-  />
-);
+*/
 
 
 Input.defaultProps = {

@@ -92,17 +92,19 @@ CuTfoot.propTypes = {
 */
 
 export const CuTd = props => (
-  <td className="clad td">
+  <td className="clad td" colSpan={props.colSpan}>
     {props.children}
   </td>
 );
 
 CuTd.defaultProps = {
   children: null,
+  colSpan: undefined,
 };
 
 CuTd.propTypes = {
   children: PropTypes.node, // TODO: Is this the ideal PropType?
+  colSpan: PropTypes.string,
 };
 
 
@@ -123,5 +125,5 @@ CuTr.defaultProps = {
 };
 
 CuTr.propTypes = {
-  children: PropTypes.node, // TODO: Is this the ideal PropType?
+  children: PropTypes.node,
 };
