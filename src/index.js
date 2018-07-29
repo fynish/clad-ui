@@ -3,13 +3,16 @@ import React from 'react';
 import CuButton from './components/Button/';
 import CuCard from './components/Card/';
 import CuInput from './components/Input/';
+import CuLoading from './components/Loading/';
 import CuNavBar from './components/NavBar/';
 import { CuTable, CuTbody, CuTd, CuTfoot, CuThead, CuTr } from './components/Table/';
 import { CuSelect, CuOption } from './components/Dropdown/';
 
+
 export const Button = CuButton;
 export const Card = CuCard;
 export const Input = CuInput;
+export const Loading = CuLoading;
 export const NavBar = CuNavBar;
 export const Option = CuOption;
 export const Select = CuSelect;
@@ -123,6 +126,62 @@ const ThemeExample = () => (
           <Td>Table</Td>
           <Td>Data</Td>
           <Td>(Td)</Td>
+        </Tr>
+      </Tbody>
+    </Table>
+
+    <hr />
+    <h3>Loading</h3>
+    <p>
+      <b>Loading</b> <i>(l)</i>: <br />
+      <Loading size="l" />
+    </p>
+    <p>
+      <b>Loading (inverse)</b> <i>(m)</i>: <br />
+      <Loading size="m" inverse />
+    </p>
+
+    <hr />
+    <h3>Assets (Glyphs)</h3>
+    <Table>
+      <Thead>
+        <Tr>
+          <Td>Size</Td>
+          <Td>Ex Glyph</Td>
+        </Tr>
+      </Thead>
+      <Tbody>
+        <Tr>
+          <Td>xxs</Td>
+          <Td><Loading size="xxs" /></Td>
+        </Tr>
+        <Tr>
+          <Td>xs</Td>
+          <Td><Loading size="xs" inverse /></Td>
+        </Tr>
+        <Tr>
+          <Td>s</Td>
+          <Td><Loading size="s" /></Td>
+        </Tr>
+        <Tr>
+          <Td>m</Td>
+          <Td><Loading size="m" inverse /></Td>
+        </Tr>
+        <Tr>
+          <Td>l</Td>
+          <Td><Loading size="l" /></Td>
+        </Tr>
+        <Tr>
+          <Td>xl</Td>
+          <Td><Loading size="xl" inverse /></Td>
+        </Tr>
+        <Tr>
+          <Td>xxl</Td>
+          <Td><Loading size="xxl" /></Td>
+        </Tr>
+        <Tr>
+          <Td>xxxl</Td>
+          <Td><Loading size="xxxl" inverse /></Td>
         </Tr>
       </Tbody>
     </Table>

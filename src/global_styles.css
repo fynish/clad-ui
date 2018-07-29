@@ -1,0 +1,71 @@
+/*
+   ___ _           _       _     ___ _       _           _ 
+  / __\ | __ _  __| |/\ /\(_)   / _ \ | ___ | |__   __ _| |___
+ / /  | |/ _` |/ _` / / \ \ |  / /_\/ |/ _ \| '_ \ / _` | / __|
+/ /___| | (_| | (_| \ \_/ / | / /_\\| | (_) | |_) | (_| | \__ \
+\____/|_|\__,_|\__,_|\___/|_| \____/|_|\___/|_.__/ \__,_|_|___/
+
+This section is for non-color styling used by multiple components.
+Colors should be added to cladUiTheme.css
+Component specific styles should be added to the style.css file in
+the components directory.
+*/
+
+
+/*
+    _        _            _   _
+   /_\  _ _ (_)_ __  __ _| |_(_)___ _ _
+  / _ \| ' \| | '  \/ _` |  _| / _ \ ' \
+ /_/ \_\_||_|_|_|_|_\__,_|\__|_\___/_||_|
+*/
+
+.clad.spin {
+  animation: glyph-spin infinite 8s linear;
+}
+
+@keyframes glyph-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+
+/*
+  ___ _
+ / __(_)______
+ \__ \ |_ / -_)
+ |___/_/__\___|
+*/
+
+.clad.size-xxs {
+  width: 1.0em;
+}
+
+.clad.size-xs {
+  width: 1.5em;
+}
+
+.clad.size-s {
+  width: 2.0em;
+}
+
+.clad.size-m {
+  width: 2.5em;
+}
+
+.clad.size-l {
+  width: 3.0em;
+}
+
+.clad.size-xl {
+  width: 3.5em;
+}
+
+.clad.size-xxl {
+  width: 3.5em;
+}
+
+.clad.size-xxxl {
+  width: 4.0em;
+}
+
+
