@@ -2,19 +2,23 @@ import React from 'react';
 
 import CuButton from './components/Button/';
 import CuCard from './components/Card/';
+import CuColumn from './components/Column/';
 import CuInput from './components/Input/';
 import CuLoading from './components/Loading/';
 import CuNavBar from './components/NavBar/';
 import { CuTable, CuTbody, CuTd, CuTfoot, CuThead, CuTr } from './components/Table/';
 import { CuSelect, CuOption } from './components/Dropdown/';
+import CuRow from './components/Row/';
 
 
 export const Button = CuButton;
 export const Card = CuCard;
+export const Column = CuColumn;
 export const Input = CuInput;
 export const Loading = CuLoading;
 export const NavBar = CuNavBar;
 export const Option = CuOption;
+export const Row = CuRow;
 export const Select = CuSelect;
 export const Table = CuTable;
 export const Tbody = CuTbody;
@@ -33,9 +37,11 @@ const ThemeExample = () => (
     <ul>
       <li>Button</li>
       <li>Card</li>
+      <li>Column</li>
       <li>Input</li>
       <li>NavBar</li>
       <li>Option</li>
+      <li>Row</li>
       <li>Select</li>
       <li>Table</li>
       <ul>
@@ -62,6 +68,38 @@ const ThemeExample = () => (
     <div className="clad bg-tertiary">bg-tertiary</div>
 
     <h2>Examples</h2>
+
+
+    <hr />
+    <h3>Row, Columns, Cards</h3>
+    <p>
+      Columns auto resize to fill the row and take an
+      optional <code>flex</code> parameter that allows the column
+      to take up relatively more space than the others (defaults
+      to <code>&#39;1&#39;</code>)
+    </p>
+    <Row>
+      <Column>
+        <Card>Column 1 - Card 1</Card>
+      </Column>
+      <Column>
+        <Card>Column 2 - Card 2</Card>
+      </Column>
+      <Column>
+        <Card>Column 3 - Card 3</Card>
+      </Column>
+
+      <Column flex="2">
+        <Card>Column 4 - Card 4 (flex 2)</Card>
+      </Column>
+      <Column>
+        <Card>Column 5 - Card 5</Card>
+      </Column>
+      <Column flex="3">
+        <Card>Column 6 - Card 6 (flex 3)</Card>
+      </Column>
+
+    </Row>
 
     <hr />
     <h3>Buttons</h3>

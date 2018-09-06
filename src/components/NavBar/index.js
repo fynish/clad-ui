@@ -1,16 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { colorNavBg } from '../../theme/';
 
-
+// TODO: Move to a CladUI CSS file
 const navStyle = {
-  backgroundColor: colorNavBg,
+  backgroundColor: '#5E52CF',
   padding: '1%',
   fontSize: '0.8em',
   textAlign: 'center',
-  width: '104%', // TODO: remove this temp. garbage
-  marginLeft: '-3%', // TODO: remove this temp. garbage
+  width: '104%',
+  marginLeft: '-3%',
   color: '#0DFFAF',
   letterSpacing: '0.1em',
 };
