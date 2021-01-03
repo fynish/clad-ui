@@ -1,0 +1,21 @@
+{
+  "name": "@fynish/clad-ui",
+  "version": "0.1.0",
+  "description": "React UI Framework",
+  "main": "src/index.js",
+  "repository": "https://github.com/fynish/clad-ui.git",
+  "author": {
+    "name": "Chris Kilpatrick",
+    "email": "open@fynish.com",
+    "url": "https://github.com/fynish/clad-ui"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fynish/clad-ui"
+ },
+  "readmeFilename": "README.md",
+  "license": "MIT",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/fynish"
+  }
+}
