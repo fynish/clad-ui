@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-
 const Button = (props) => {
   let buttonRank = 'bg-default';
   if (props.rank) {

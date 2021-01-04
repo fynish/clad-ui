@@ -14,7 +14,7 @@ This is a UI trial subject to be discontinued and deleted at any point. Please d
 ---
 ## How to Use
 
-See [The Future of CladUI](the-future-of-cladui) before using. To use this package:
+See [The Future of CladUI](#the-future-of-cladui) before using. To use this package:
 
 - Add the `@fynish` registry line from our `.npmrc` file to your project's `.npmrc` file.
 - `yarn add` or `npm install` `@fynish/clad-ui@0.1.0`
